@@ -240,6 +240,7 @@ class CloudflaredInstall extends Command
         $subdomain = text(
             label: 'What subdomain do you want to use for this tunnel?',
             placeholder: $this->herdSiteName(),
+            default: $this->herdSiteName(),
             hint: "The tunnel will be available at {subdomain}.{$domain}",
         );
 
